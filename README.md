@@ -1,4 +1,8 @@
+### DESCRIPTION
+
 Docker container for [Updog](https://github.com/sc0tfree/updog).
+
+---
 
 ### BUILD
 
@@ -8,6 +12,8 @@ To build the image locally, run:
 docker build -t updog-docker .
 ```
 
+---
+
 ### USAGE
 
 For a quick start, just issue the following command:
@@ -15,6 +21,10 @@ For a quick start, just issue the following command:
 ```
 docker run -d --name updog-docker -p 9090:9090 updog-docker
 ```
+
+Then open a browser and navigate to http://localhost:9090
+
+---
 
 ### PERSIST DATA
 
