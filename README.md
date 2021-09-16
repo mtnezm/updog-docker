@@ -1,0 +1,25 @@
+Docker container for [Updog](https://github.com/sc0tfree/updog).
+
+### BUILD
+
+To build the image locally, run:
+
+```
+docker build -t updog-docker .
+```
+
+### USAGE
+
+For a quick start, just issue the following command:
+
+```
+docker run -d --name updog-docker -p 9090:9090 updog-docker
+```
+
+### PERSIST DATA
+
+Mapping a volume to the container is possible by adding `-v /path/to/data:/data` to the `docker run` command:
+
+```
+docker run -d --name updog-docker -v /path/to/data:/data -p 9090:9090 updog-docker
+```
