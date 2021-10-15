@@ -1,22 +1,20 @@
-### DESCRIPTION
+# DESCRIPTION
 
-Docker container for [Updog](https://github.com/sc0tfree/updog).
+Docker image for [Updog](https://github.com/sc0tfree/updog).
 
----
 
-### BUILD
+# BUILD
 
-To build the image locally, run:
+To build the image locally, execute:
 
 ```
 docker build -t updog-docker .
 ```
 
----
 
-### USAGE
+# USAGE
 
-For a quick start, just issue the following command:
+For a quick start, just run:
 
 ```
 docker run -d --name updog-docker -p 9090:9090 updog-docker
@@ -24,9 +22,8 @@ docker run -d --name updog-docker -p 9090:9090 updog-docker
 
 Then open a browser and navigate to http://localhost:9090
 
----
 
-### PERSIST DATA
+# PERSIST DATA
 
 Mapping a volume to the container is possible by adding `-v /path/to/data:/data` to the `docker run` command:
 
