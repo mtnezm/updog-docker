@@ -8,7 +8,7 @@ Docker image for [Updog](https://github.com/sc0tfree/updog).
 To build the image locally, execute:
 
 ```
-docker build -t updog-docker .
+docker buildx build -t updog-docker .
 ```
 
 
